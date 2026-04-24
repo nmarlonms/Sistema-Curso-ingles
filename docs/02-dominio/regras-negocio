@@ -1,0 +1,16 @@
+# Regras de Negócio
+
+## Matrícula
+- Um aluno só pode estar ativo em turmas válidas
+- Status define participação no sistema
+
+## Presença
+- Só pode ser registrada se houver aula
+- Aluno deve estar matriculado na turma
+
+## Financeiro
+- Mensalidade só pode ser gerada para matrícula ativa
+
+## Repasse do Professor
+- Baseado em alunos matriculados e ativos
+- Não deve ser recalculado após geração
