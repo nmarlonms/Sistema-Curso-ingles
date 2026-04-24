@@ -1,0 +1,77 @@
+# Modelagem de Domínio
+
+## Visão Geral
+Sistema de gestão de curso de inglês focado na administração de alunos, professores e financeiro.
+
+---
+
+## Entidades
+
+### Aluno
+- id
+- nome
+- dataNascimento
+- telefone
+- email
+- ativo
+
+---
+
+### Matrícula
+- id
+- dataMatricula
+- status (ATIVA, TRANCADA, CANCELADA)
+
+---
+
+### Turma
+- id
+- nome
+- horario
+- capacidade
+
+---
+
+### Professor
+- id
+- nome
+- especialidade
+
+---
+
+### Aula
+- id
+- data
+- horarioInicio
+- horarioFim
+
+---
+
+### Presença
+- id
+- presente
+
+---
+
+### Mensalidade
+- id
+- valor
+- vencimento
+- status
+
+---
+
+### Pagamento
+- id
+- valorPago
+- dataPagamento
+
+---
+
+### RepasseProfessor
+- id
+- competencia
+- valorPorAluno
+- totalAlunosAtivos
+- valorTotal
+- status
