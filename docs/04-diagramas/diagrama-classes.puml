@@ -1,0 +1,26 @@
+@startuml
+
+class Aluno
+class Matrícula
+class Turma
+class Professor
+class Aula
+class Presença
+class Mensalidade
+class Pagamento
+class RepasseProfessor
+
+Aluno "1" -- "*" Matrícula
+Matrícula "*" -- "1" Turma
+Turma "1" -- "1" Professor
+Turma "1" -- "*" Aula
+Aula "1" -- "*" Presença
+Aluno "1" -- "*" Presença
+
+Aluno "1" -- "*" Mensalidade
+Mensalidade "1" -- "*" Pagamento
+
+Turma "1" -- "*" RepasseProfessor
+Professor "1" -- "*" RepasseProfessor
+
+@enduml
